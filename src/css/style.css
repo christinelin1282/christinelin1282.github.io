@@ -9,8 +9,7 @@
 }
 
 body {
-	font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond,
-		Times New Roman, serif;
+	font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 	-webkit-font-smoothing: antialiased;
 	background: white;
 	color: black;
@@ -30,8 +29,7 @@ h6 {
 	margin: 0;
 	padding: 0;
 	color: black;
-	font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond,
-		Times New Roman, serif;
+	font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
 }
 
 h1 {
@@ -237,8 +235,8 @@ img {
 }
 
 .navbarUL {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: flex;
+	justify-content: space-between;
 }
 
 #navbar {
@@ -318,14 +316,14 @@ img {
 	}
 
 	#navbar ul li {
-		width: 30%;
-		margin: 0.2rem 0;
+		margin: 0;
 		padding: 0;
 	}
 
 	#navbar a {
-		padding: 5px 10px;
+		padding: 5px;
 		margin: 0;
+		font-size: 14px;
 	}
 
 	#navbar {
@@ -334,7 +332,7 @@ img {
 
 	.navbar-hr {
 		display: block;
-		margin: 0.5rem 0 0 0;
+		margin: 0;
 		padding: 0;
 	}
 }
@@ -507,7 +505,7 @@ img {
 	transition-duration: 0.6s;
 }
 
-.icon-contact {
+.icon-contact::before {
 	display: flex;
 	height: 3.5rem;
 	width: 3.5rem;
@@ -519,7 +517,7 @@ img {
 }
 
 @media (max-width: 425px) {
-	.icon-contact {
+	.icon-contact::before {
 		height: 2.5rem;
 		width: 2.5rem;
 		font-size: 1.5rem;
@@ -527,7 +525,7 @@ img {
 }
 
 @media (max-width: 374px) {
-	.icon-contact {
+	.icon-contact::before {
 		height: 1rem;
 		width: 1rem;
 		font-size: 1rem;
